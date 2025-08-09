@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Z2N.ID — Jual Beli Akun MLBB</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Z2N.ID — Toko akun Mobile Legends terpercaya. Garansi login, banyak pilihan, harga bersahabat.">
+</head>
+<body>
+  
+<header>
+  <div class="topbar container">
+    <div class="brand">
+      <img src="assets/logo.png" alt="Z2N.ID logo">
+      <div>
+        <div class="title">Z2N.ID</div>
+        <div style="font-size:12px;color:#90a0ab">Jual Beli Akun Mobile Legends</div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Produk</a></li>
+        <li><a href="transaksi.html" class="">Transaksi</a></li>
+        <li><a href="invoice.html" class="">Invoice</a></li>
+        <li><a href="kontak.html" class="">Kontak</a></li>
+        <li><a href="tentang.html" class="">Tentang</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="marquee-wrap">
+    <marquee behavior="scroll" direction="left" scrollamount="6">🎉 Promo Agustus! Cashback s/d Rp50.000 | Garansi Login & Bantuan Transfer Akun 24/7 | Hubungi WhatsApp untuk request akun khusus.</marquee>
+  </div>
+</header>
+
+  <main class="container">
+    <div class="layout">
+      <aside class="aside">
+        <div class="sidebar-section">
+          <h3>Kategori</h3>
+          <div class="category">
+            <a href="#">Rank Mythic</a>
+            <a href="#">Rank Legend</a>
+            <a href="#">Collector Skin</a>
+            <a href="#">Limited Skin</a>
+            <a href="#">Murmer</a>
+          </div>
+        </div>
+        <div class="sidebar-section">
+          <h3>Banner (Link Gambar)</h3>
+          <a href="https://wa.me/6281318483706?text=Halo%20Z2N.ID%2C%20saya%20mau%20beli%20akun" target="_blank" rel="noopener">
+            <img src="assets/banner.png" alt="Promo: klik untuk chat WA">
+          </a>
+        </div>
+        <div class="sidebar-section">
+          <h3>Keamanan</h3>
+          <ul>
+            <li>Garansi Login</li>
+            <li>Full Access (email/akun binding jelas)</li>
+            <li>Transaksi aman (rekber/escrow by admin)</li>
+          </ul>
+        </div>
+      </aside>
+
+      <section>
+        <div class="hero card">
+          <img src="assets/banner.png" alt="Promo Z2N.ID">
+          <div class="overlay">
+            <span class="badge">Toko Resmi</span>
+            <h1>Akun Mobile Legends Siap Push Rank</h1>
+            <p>Pilih akun favoritmu, klik <b>Beli</b> lalu checkout. Cepat, aman, dan bergaransi.</p>
+          </div>
+        </div>
+
+        <div class="pad">
+          <h2 style="margin:12px 0">Pilihan Akun</h2>
+          <div class="grid" id="product-grid">
+            <!-- Cards akan diisi oleh script.js -->
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <button class="cta-whatsapp" onclick="window.open('https://wa.me/6281318483706','_blank')">Chat WhatsApp</button>
+
+  
+<footer>
+  <div>© 2025 Z2N.ID — Mobile Legends Account Shop</div>
+  <div class="social">
+    <a href="https://wa.me/6281318483706" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+  <script>
+    // Render produk di homepage
+    renderProducts('product-grid');
+  </script>
+</body>
+</html>

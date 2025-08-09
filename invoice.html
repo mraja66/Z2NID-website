@@ -1,0 +1,119 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Invoice — Z2N.ID</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+<header>
+  <div class="topbar container">
+    <div class="brand">
+      <img src="assets/logo.png" alt="Z2N.ID logo">
+      <div>
+        <div class="title">Z2N.ID</div>
+        <div style="font-size:12px;color:#90a0ab">Jual Beli Akun Mobile Legends</div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="">Produk</a></li>
+        <li><a href="transaksi.html" class="">Transaksi</a></li>
+        <li><a href="invoice.html" class="active">Invoice</a></li>
+        <li><a href="kontak.html" class="">Kontak</a></li>
+        <li><a href="tentang.html" class="">Tentang</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="marquee-wrap">
+    <marquee behavior="scroll" direction="left" scrollamount="6">🎉 Promo Agustus! Cashback s/d Rp50.000 | Garansi Login & Bantuan Transfer Akun 24/7 | Hubungi WhatsApp untuk request akun khusus.</marquee>
+  </div>
+</header>
+
+  <main class="container">
+    <div class="invoice card pad" id="invoice">
+      <div class="head">
+        <div>
+          <h2 style="margin:0">INVOICE</h2>
+          <div id="inv-id" class="badge">#Z2N-XXXX</div>
+        </div>
+        <div class="stamp">Z2N.ID</div>
+      </div>
+
+      <div class="grid" style="grid-template-columns:1fr 1fr">
+        <div>
+          <h3 style="margin:4px 0">Penjual</h3>
+          <div>Z2N.ID — Mobile Legends Account Shop</div>
+          <div>Email: admin@z2n.id (contoh)</div>
+          <div>WA: 6281318483706</div>
+        </div>
+        <div>
+          <h3 style="margin:4px 0">Pembeli</h3>
+          <div id="cust-name">—</div>
+          <div id="cust-email">—</div>
+          <div id="cust-wa">—</div>
+        </div>
+      </div>
+
+      <div class="pad" style="padding-left:0;padding-right:0">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Produk</th>
+              <th>Garansi</th>
+              <th>Harga</th>
+            </tr>
+          </thead>
+          <tbody id="inv-items"></tbody>
+          <tfoot>
+            <tr>
+              <th colspan="2" style="text-align:right">Subtotal</th>
+              <th id="inv-subtotal">Rp0</th>
+            </tr>
+            <tr>
+              <th colspan="2" style="text-align:right">Diskon/Kupon</th>
+              <th id="inv-discount">Rp0</th>
+            </tr>
+            <tr>
+              <th colspan="2" style="text-align:right">Total</th>
+              <th id="inv-total">Rp0</th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <div class="pad">
+        <div><b>Metode Bayar:</b> <span id="inv-method">—</span></div>
+        <div><b>Tanggal:</b> <span id="inv-date">—</span></div>
+        <div><b>Catatan:</b> <span id="inv-notes">—</span></div>
+      </div>
+
+      <div class="pad" style="display:flex;gap:12px;justify-content:flex-end">
+        <button class="btn" onclick="window.location.href='index.html'">Belanja Lagi</button>
+        <button class="btn" onclick="window.print()">Cetak / Simpan PDF</button>
+        <a class="btn primary" id="inv-wa" target="_blank" rel="noopener">Kirim ke WhatsApp</a>
+      </div>
+    </div>
+  </main>
+
+  
+<footer>
+  <div>© 2025 Z2N.ID — Mobile Legends Account Shop</div>
+  <div class="social">
+    <a href="https://wa.me/6281318483706" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+  <script>
+    renderInvoice();
+  </script>
+</body>
+</html>

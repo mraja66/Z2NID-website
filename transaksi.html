@@ -1,0 +1,125 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Transaksi — Z2N.ID</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+<header>
+  <div class="topbar container">
+    <div class="brand">
+      <img src="assets/logo.png" alt="Z2N.ID logo">
+      <div>
+        <div class="title">Z2N.ID</div>
+        <div style="font-size:12px;color:#90a0ab">Jual Beli Akun Mobile Legends</div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="">Produk</a></li>
+        <li><a href="transaksi.html" class="active">Transaksi</a></li>
+        <li><a href="invoice.html" class="">Invoice</a></li>
+        <li><a href="kontak.html" class="">Kontak</a></li>
+        <li><a href="tentang.html" class="">Tentang</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="marquee-wrap">
+    <marquee behavior="scroll" direction="left" scrollamount="6">🎉 Promo Agustus! Cashback s/d Rp50.000 | Garansi Login & Bantuan Transfer Akun 24/7 | Hubungi WhatsApp untuk request akun khusus.</marquee>
+  </div>
+</header>
+
+  <main class="container">
+    <div class="card pad">
+      <h2>Form Transaksi</h2>
+      <p class="sub">Isi data anda dengan benar. Setelah klik <b>Checkout</b>, anda akan diarahkan ke halaman <b>Invoice</b>.</p>
+
+      <form id="trxForm" class="form">
+        <div>
+          <label for="nama">Nama Lengkap</label>
+          <input id="nama" name="nama" required placeholder="Nama kamu">
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="emailkamu@example.com">
+        </div>
+        <div>
+          <label for="wa">Nomor WhatsApp</label>
+          <input id="wa" name="wa" type="tel" required placeholder="628xxxxxxxxxx">
+        </div>
+        <div>
+          <label for="metode">Metode Pembayaran</label>
+          <select id="metode" name="metode" required>
+            <option value="">Pilih Metode</option>
+            <option>Transfer Bank</option>
+            <option>QRIS</option>
+            <option>E-Wallet (Dana/OVO/Gopay)</option>
+          </select>
+        </div>
+
+        <div class="full">
+          <label for="produk">Produk</label>
+          <input id="produk" name="produk" readonly>
+        </div>
+
+        <div>
+          <label for="harga">Harga (Rp)</label>
+          <input id="harga" name="harga" type="number" readonly>
+        </div>
+        <div>
+          <label for="kupon">Kupon (opsional)</label>
+          <input id="kupon" name="kupon" placeholder="Z2NHEMAT">
+        </div>
+
+        <div class="full">
+          <label>Keamanan Akun</label>
+          <div class="row">
+            <label><input type="radio" name="garansi" value="Garansi Login 7 Hari" checked> Garansi Login 7 Hari</label>
+            <label><input type="radio" name="garansi" value="Garansi Login 30 Hari"> Garansi Login 30 Hari</label>
+          </div>
+        </div>
+
+        <div class="full">
+          <label for="catatan">Catatan</label>
+          <textarea id="catatan" name="catatan" rows="3" placeholder="Contoh: minta bantu migrasi ke Moonton"></textarea>
+        </div>
+
+        <div class="full">
+          <label><input type="checkbox" id="tos" name="tos" required> Saya setuju dengan Syarat & Ketentuan Z2N.ID</label>
+        </div>
+
+        <div class="full actions">
+          <button type="reset" class="btn">Reset</button>
+          <button type="submit" class="btn primary">Checkout / Buat Pesanan</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  
+<footer>
+  <div>© 2025 Z2N.ID — Mobile Legends Account Shop</div>
+  <div class="social">
+    <a href="https://wa.me/6281318483706" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+  <script>
+    prefillTransactionFromQuery();
+    const form = document.getElementById('trxForm');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      createOrderAndGoToInvoice(new FormData(form));
+    });
+  </script>
+</body>
+</html>
