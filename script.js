@@ -1,12 +1,12 @@
 
 // Data produk simulasi
 const PRODUCTS = [
-  { id: 'ML-001', name: 'Mythic 120⭐ | 40 Skin | 65% Hero', price: 1499000, img: 'assets/akun1.png' },
-  { id: 'ML-002', name: 'Mythic 80⭐ | 25 Skin | 50% Hero', price: 999000, img: 'assets/akun2.png' },
-  { id: 'ML-003', name: 'Legend V | 18 Skin | 45% Hero', price: 749000, img: 'assets/akun3.png' },
-  { id: 'ML-004', name: 'Epic II | 12 Skin | 30% Hero', price: 499000, img: 'assets/akun4.png' },
-  { id: 'ML-005', name: 'Collector Skin Set | Mythic', price: 1999000, img: 'assets/akun5.png' },
-  { id: 'ML-006', name: 'Murmer Starter | Rank GM', price: 249000, img: 'assets/akun6.png' },
+  { id: 'ML-001', name: 'Mythic 120⭐ | 40 Skin | 65% Hero', price: 1499000, img: 'assets/akun1.jpg' },
+  { id: 'ML-002', name: 'Mythic 80⭐ | 25 Skin | 50% Hero', price: 999000, img: 'assets/akun2.jpg' },
+  { id: 'ML-003', name: 'Legend V | 18 Skin | 45% Hero', price: 749000, img: 'assets/akun3.jpg' },
+  { id: 'ML-004', name: 'Epic II | 12 Skin | 30% Hero', price: 499000, img: 'assets/akun4.jpg' },
+  { id: 'ML-005', name: 'Collector Skin Set | Mythic', price: 1999000, img: 'assets/akun5.jpg' },
+  { id: 'ML-006', name: 'Murmer Starter | Rank GM', price: 249000, img: 'assets/akun6.jpg' },
 ];
 
 function idr(n) { return n.toLocaleString('id-ID'); }
